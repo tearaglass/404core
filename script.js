@@ -1,3 +1,4 @@
+// script.js
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('page loaded, ready for chaos');
+    console.log('page loaded with subtle enchantments');
   });
