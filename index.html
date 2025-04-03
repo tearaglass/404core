@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404core records</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #0ff;
+      font-family: 'VT323', monospace;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2em;
+      border-bottom: 1px solid #0ff;
+    }
+    #catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      padding: 2em;
+    }
+    .card {
+      border: 1px solid #0ff;
+      padding: 1.5em;
+      background: #111;
+    }
+    .desc {
+      margin-bottom: 1em;
+    }
+    audio {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      border-top: 1px solid #0ff;
+      font-size: 16px;
+    }
+    a {
+      color: #f0f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>404core records</h1>
+    <p><em>no signal. all feeling.</em></p>
+  </header>
+
+  <section id="catalog">
+    <div class="card">
+      <h2>REMIX_UR_BREAKDOWN.zip</h2>
+      <p><strong>by ERROR_BABY</strong></p>
+      <p class="desc">send me your cursed voice memo. i’ll turn it into a full-blown experimental banger. noise, glitch, ambient trap—whatever the chaos needs.</p>
+      <audio controls src="samples/error_baby_sample.mp3"></audio>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
+        <input type="submit" value="Buy Now – $18">
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>DAILY PROPHECIES VOL. 3</h2>
+      <p><strong>by babygoth oracle</strong></p>
+      <p class="desc">affirmation mp3s that start gentle and end cursed. 3-day streak = reality shift.</p>
+      <audio controls src="samples/babygoth_sample.mp3"></audio>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
+        <input type="submit" value="Buy Now – $9.99">
+      </form>
+    </div>
+
+    <!-- repeat for other items -->
+
+  </section>
+
+  <footer>
+    <p>404core records // est. never // bandwidth limited</p>
+    <p><a href="mailto:transmissions@404core.biz">contact</a></p>
+  </footer>
+</body>
+</html>
