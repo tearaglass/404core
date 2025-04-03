@@ -1,69 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="404core records - experimental digital music services. no signal. all feeling.">
+  <meta name="keywords" content="digital, experimental, music, glitch, ambient, trap, records">
+  <meta name="author" content="404core records">
   <title>404core records</title>
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #000;
-      color: #0ff;
-      font-family: 'VT323', monospace;
-      font-size: 20px;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 2em;
-      border-bottom: 1px solid #0ff;
-    }
-    #catalog {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2em;
-      padding: 2em;
-    }
-    .card {
-      border: 1px solid #0ff;
-      padding: 1.5em;
-      background: #111;
-    }
-    .desc {
-      margin-bottom: 1em;
-    }
-    audio {
-      width: 100%;
-      margin-bottom: 1em;
-    }
-    footer {
-      text-align: center;
-      padding: 2em;
-      border-top: 1px solid #0ff;
-      font-size: 16px;
-    }
-    a {
-      color: #f0f;
-    }
-  </style>
 </head>
 <body>
-  <header>
+  <header aria-label="site header">
     <h1>404core records</h1>
     <p><em>no signal. all feeling.</em></p>
   </header>
 
-  <section id="catalog">
+  <section id="catalog" role="main" aria-label="catalog">
     <div class="card">
       <h2>REMIX_UR_BREAKDOWN.zip</h2>
       <p><strong>by ERROR_BABY</strong></p>
       <p class="desc">send me your cursed voice memo. i’ll turn it into a full-blown experimental banger. noise, glitch, ambient trap—whatever the chaos needs.</p>
-      <audio controls src="samples/error_baby_sample.mp3"></audio>
+      <audio controls src="samples/error_baby_sample.mp3" aria-label="sample audio for remix_ur_breakdown"></audio>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
-        <input type="submit" value="Buy Now – $18">
+        <input type="submit" value="buy now – $18">
       </form>
     </div>
 
@@ -71,11 +33,11 @@
       <h2>DAILY PROPHECIES VOL. 3</h2>
       <p><strong>by babygoth oracle</strong></p>
       <p class="desc">affirmation mp3s that start gentle and end cursed. 3-day streak = reality shift.</p>
-      <audio controls src="samples/babygoth_sample.mp3"></audio>
+      <audio controls src="samples/babygoth_sample.mp3" aria-label="sample audio for daily prophecies vol. 3"></audio>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
-        <input type="submit" value="Buy Now – $9.99">
+        <input type="submit" value="buy now – $9.99">
       </form>
     </div>
 
@@ -83,11 +45,11 @@
       <h2>GIRL BOSS NATIONAL ANTHEM</h2>
       <p><strong>by yr pal violet</strong></p>
       <p class="desc">60 sec. ballad for the emotionally sovereign. cinematic pads, layered harmonies, tragic flute optional. cry patriotically.</p>
-      <audio controls src="samples/violet_sample.mp3"></audio>
+      <audio controls src="samples/violet_sample.mp3" aria-label="sample audio for girl boss national anthem"></audio>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
-        <input type="submit" value="Buy Now – $16">
+        <input type="submit" value="buy now – $16">
       </form>
     </div>
 
@@ -95,11 +57,11 @@
       <h2>ENERGY REFORMAT PROTOCOL V1.0</h2>
       <p><strong>by moss.txt</strong></p>
       <p class="desc">custom binaural/synth/drone-based track to help you reboot your soul. includes whispers, detuned bowls, haunted mall wind.</p>
-      <audio controls src="samples/moss_sample.mp3"></audio>
+      <audio controls src="samples/moss_sample.mp3" aria-label="sample audio for energy reformat protocol v1.0"></audio>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
-        <input type="submit" value="Buy Now – $14">
+        <input type="submit" value="buy now – $14">
       </form>
     </div>
 
@@ -107,18 +69,20 @@
       <h2>TIME CAN SUCK MY DICK (EP)</h2>
       <p><strong>by trashangel69</strong></p>
       <p class="desc">choose your enemy—time, shame, capitalism. i’ll diss it in under 60 seconds. fire guaranteed. conceptually illegal.</p>
-      <audio controls src="samples/trashangel_sample.mp3"></audio>
+      <audio controls src="samples/trashangel_sample.mp3" aria-label="sample audio for time can suck my dick ep"></audio>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
-        <input type="submit" value="Buy Now – $11">
+        <input type="submit" value="buy now – $11">
       </form>
     </div>
   </section>
 
-  <footer>
+  <footer aria-label="site footer">
     <p>404core records // est. never // bandwidth limited</p>
     <p><a href="mailto:transmissions@404core.biz">contact</a></p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

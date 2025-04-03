@@ -1,0 +1,40 @@
+body {
+    background-color: #000;
+    color: #0ff;
+    font-family: 'vt323', monospace;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    text-align: center;
+    padding: 2em;
+    border-bottom: 1px solid #0ff;
+  }
+  #catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    padding: 2em;
+  }
+  .card {
+    border: 1px solid #0ff;
+    padding: 1.5em;
+    background: #111;
+  }
+  .desc {
+    margin-bottom: 1em;
+  }
+  audio {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  footer {
+    text-align: center;
+    padding: 2em;
+    border-top: 1px solid #0ff;
+    font-size: 16px;
+  }
+  a {
+    color: #f0f;
+  }
