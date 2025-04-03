@@ -5,28 +5,37 @@
     box-sizing: border-box;
   }
   
+  :root {
+    --bg-color: #121212; /* dark charcoal */
+    --text-color: #d29cb5; /* dusty rose */
+    --accent-color: #b19cd9; /* periwinkle */
+    --border-color: #d29cb5;
+    --shadow-color: rgba(210,156,181,0.5);
+    --shadow-color2: rgba(177,156,217,0.5);
+  }
+  
   body {
-    background-color: #000;
-    color: #0ff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: 'ibm plex mono', monospace;
     font-size: 20px;
     margin: 0;
     padding: 0;
     position: relative;
     overflow-x: hidden;
-    text-shadow: 0 0 5px rgba(255,182,193,0.5), 0 0 10px rgba(147,112,219,0.5);
+    text-shadow: 0 0 5px var(--shadow-color), 0 0 10px var(--shadow-color2);
   }
   
   header {
     text-align: center;
     padding: 2em;
-    border-bottom: 1px solid #0ff;
+    border-bottom: 1px solid var(--border-color);
     position: relative;
   }
   
   .sparkles {
     font-size: 1.2em;
-    color: #ff69b4;
+    color: var(--accent-color);
   }
   
   #catalog {
@@ -37,9 +46,9 @@
   }
   
   .card {
-    border: 1px solid #0ff;
+    border: 1px solid var(--border-color);
     padding: 1.5em;
-    background: #111;
+    background: #1d1d1d;
     overflow-wrap: break-word;
   }
   
@@ -55,13 +64,13 @@
   footer {
     text-align: center;
     padding: 2em;
-    border-top: 1px solid #0ff;
+    border-top: 1px solid var(--border-color);
     font-size: 16px;
     position: relative;
   }
   
   footer a {
-    color: #f0f;
+    color: var(--accent-color);
   }
   
   footer .ritual {
