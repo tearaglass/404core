@@ -1,5 +1,11 @@
 /* styles.css */
-body {
+
+/* global reset */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
     background-color: #000;
     color: #0ff;
     font-family: 'ibm plex mono', monospace;
@@ -8,7 +14,7 @@ body {
     padding: 0;
     position: relative;
     overflow-x: hidden;
-    text-shadow: 0 0 5px rgba(255, 182, 193, 0.5), 0 0 10px rgba(147, 112, 219, 0.5);
+    text-shadow: 0 0 5px rgba(255,182,193,0.5), 0 0 10px rgba(147,112,219,0.5);
   }
   
   header {
@@ -34,6 +40,7 @@ body {
     border: 1px solid #0ff;
     padding: 1.5em;
     background: #111;
+    overflow-wrap: break-word;
   }
   
   .desc {
@@ -94,9 +101,9 @@ body {
   
   @keyframes float {
     0%, 100% {
-      transform: translateY(0);
+      transform: translatey(0);
     }
     50% {
-      transform: translateY(10px);
+      transform: translatey(10px);
     }
   }
